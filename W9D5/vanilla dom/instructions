@@ -1,0 +1,6 @@
+
+
+With that set up, we are free to write our JavaScript code directly in the event listener's callback. No need to declare classes, constructors, etc. -- we're just writing stand-alone code that will be executed as soon as the DOM is loaded.
+
+First, we declare a function toggleLi that takes in an event. Using that event, we grab the currentTarget (which is the <li> that was clicked on) and toggle its className to be either visited or "". Over in our CSS file, the class .visited is set to have line-through its text. Because of this, all we have to do to toggle the strikethrough appearance of the text is toggle the <li>'s class to visited or not.
+
